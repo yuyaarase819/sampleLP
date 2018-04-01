@@ -2,29 +2,29 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="mizunoLP.css">
+    <link rel="stylesheet" href="LP.css">
     <link rel="stylesheet" href="normalize.css">
   </head>
   <body>
-    <header class="l-footer">
+    <header class="l-header">
       <div class="headerTitle-wrap">
         <h1 class="headerTitle">
-          <img src="images/title_06.png">
+          <img class="titleImage" src="images/title_06.png">
         </h1>
-        <div class="place" alt="開催場所">
-          <img src="images/place.png">
+        <div class="place">
+          <img src="images/place.png" alt="開催場所">
         </div>
         <p>2017年. 12 .26 @ 博多◯◯◯◯ビル</p>
-        <a href="#" class="button">無料イベントに参加したい　→</a>
+        <div class="btn">
+          <a href="#" class="header-button">無料イベントに参加したい　→</a>
+        </div>
       </div>
-      <div class="headerImage">
-        <img src="images/pc-hund_03.png" alt="">
-      </div>
+      <img  class="pc-hund" src="images/pc-hund.png" alt="">
     </header>
     <section class="engineer-description">
       <div class="descriptionText">
-        <h2>You Have Potential !!<br>
-          「未経験」は大きなノビしろ。
+        <h2><span class="message">You Have Potential !!</span><br>
+          <span class="comment">｢未経験」は大きなノビしろ。</span>
         </h2>
         <p>
           WEBエンジニア技術は、未経験からでも修得しやすいコトが特徴。<br>
@@ -33,15 +33,23 @@
           ものをつくることが好きだったり、作り方を考えるのが好きだったり、<br>
           そんな人が、やりがいを感じることのできる職種です！
          </p>
-        <a href="#" class="button">エンジニアに挑戦したい　→</a>
+         <div class="btn">
+           <a href="#" class="button">エンジニアに挑戦したい　→</a>
+         </div>
       </div>
       <section class="characteristic">
-        <h3><img src="images/finger.png">こんな人が向いています！</h3>
-        <ul>
-          <li><img src="images/check.png">ものを作るのが大好き！</li>
-          <li><img src="images/check.png">パソコンやインターネットが好き！</li>
-          <li><img src="images/check.png">新しい専門技術を身につけたい！</li>
-        </ul>
+        <div class="characteristicWrap">
+          <img src="images/finger.png">
+          <h3>こんな人が向いています！</h3>
+        </div>
+          <div class="suitablecontent">
+            <ul>
+              <li><img src="images/check.png">ものを作るのが大好き!</li>
+              <li><img src="images/check.png">パソコンやインターネットが好き!</li>
+              <li><img src="images/check.png">新しい専門技術を身につけたい!</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </section>
     <section class="state">
@@ -49,7 +57,7 @@
         <img src="images/human_03.png">
       </div>
       <div class="stateText">
-        <h2>Not Enough Engineers...<br>
+        <h2><span class="message">Not Enough Engineers...</span><br>
           日本のIT業界は、人材不足。
         </h2>
         <p>
@@ -59,13 +67,13 @@
           一般的な職種と違い、経験年数や勤続年数ではなく、持ってるスキルさえ<br>
           あれば、どんな会社でも活躍できる活躍できるのがWEBエンジニアの魅力なんです。
          </p>
-        <a href="#" class="button">エンジニアに挑戦したい　→</a>
+         <a href="#" class="button">エンジニアに挑戦したい　→</a>
       </div>
     </section>
     <section class="engineer-work">
       <div class="engineer-workText">
-        <h2>Not Enough Engineers...<br>
-          日本のIT業界は、人材不足。
+        <h2><span class="message">How To Work Engineer?</span><br>
+          エンジニアのはたらき方。
         </h2>
         <p>
           WEBエンジニア技術は、未経験からでも修得しやすいコトが特徴。<br>
@@ -82,58 +90,66 @@
     </section>
     <footer class="l-footer">
       <h2>
-        持ち物は、ITエンジニアになりたい気持ちだけ。<br>
-        イベントで、Webエンジニアを語り尽くします!!
+        <span class="fotterTitle-first">持ち物は、ITエンジニアになりたい気持ちだけ。</span><br>
+        <span class="fotterTitle-second">イベントで、Webエンジニアを語り尽くします!!</span>
       </h2>
       <img src="images/wave.png" alt="波線">
       <div class="footer-contentsWrap">
         <section class="event">
-          <h3><img src="images/checkbox.png">イベント概要</h3>
-          <table class="eventOverView">
-            <tr>
-            <td>開催日時</td>
-            <td>12月　16日　（土）11:00 ~ 13:00</td>
-            </tr>
-            <tr>
-            <td valign="top">開催場所</td>
-            <td valign="top">福岡市博多区水野水野3-10-19
-              <br>ホゲフガビル 3F
-            </td>
-            </tr>
-            <tr>
-            <td>開催内容</td>
-            <td>WEBエンジニアになるまで</td>
-            </tr>
-            <tr>
-            <td>参加費用</td>
-            <td>参加費用</td>
-            </tr>
-            <tr>
-            <td>持ち物</td>
-            <td>不要</td>
-            </tr>
-            <tr>
-            <td>定員</td>
-            <td>30名</td>
-            </tr>
-            <tr>
-            <td valign="top">主催</td>
-            <td valign="top">Ragate 株式会社 ×
-              <br>有限会社MARUSE共済
-            </td>
-            </td>
-            </tr>
-          </table>
+          <div class="eventTitle">
+            <img src="images/checkbox.png">
+            <h3>イベント概要</h3>
+          </div>
+          <div class="eventOverViewWrap">
+            <table class="eventOverView">
+              <tr>
+              <td>開催日時</td>
+              <td>12月　16日　（土）11:00 ~ 13:00</td>
+              </tr>
+              <tr>
+              <td valign="top">開催場所</td>
+              <td valign="top">福岡市博多区水野水野3-10-19
+                <br>ホゲフガビル 3F
+              </td>
+              </tr>
+              <tr>
+              <td>開催内容</td>
+              <td>WEBエンジニアになるまで</td>
+              </tr>
+              <tr>
+              <td>参加費用</td>
+              <td>参加費用</td>
+              </tr>
+              <tr>
+              <td>持ち物</td>
+              <td>不要</td>
+              </tr>
+              <tr>
+              <td>定員</td>
+              <td>30名</td>
+              </tr>
+              <tr>
+              <td valign="top">主催</td>
+              <td valign="top">Ragate 株式会社 ×
+                <br>有限会社MARUSE共済
+              </td>
+              </td>
+              </tr>
+            </table>
+          </div>
         </section>
         <section class="prof">
-          <h3><img src="images/human.png" alt="マーク">登壇者プロフィール</h3>
+          <div class="profImageTitle">
+            <img src="images/human.png" alt="マーク">
+            <h3>登壇者プロフィール</h3>
+          </div>
           <div class="profContent">
             <div class="profImage">
               <img src="images/mizuno.png" alt="水野">
             </div>
             <h4>
-              <span>水野　竜与志</span>
-              <span>Ragate 株式会社　CEO/CTO</span>
+              <span id="name">水野　竜与志</span>
+              <br><span id="nameContent">Ragate 株式会社　CEO/CTO</span>
             </h4>
             <div class="history">
               <ul>
@@ -148,9 +164,9 @@
         </section>
       </div>
       <div class="btn">
-        <a href="#" class="button">エンジニアに挑戦したい　→</a>
+        <a href="#" class="footer-button">いますぐイベントに申し込み→</a>
       </div>
-      <p>Copylight©️ Ragate inc.2017 All Rights Reserved.</p>
+      <p id="copyright">Copyright &copy; Ragate inc. 2017 All Rights Reserved.</p>
     </footer>
   </body>
 </html>
