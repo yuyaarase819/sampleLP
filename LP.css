@@ -9,40 +9,13 @@ html {
 }
 
 .l-header {
-display:flex;
-justify-content:flex-start;
-width:1100px;
-height:500px;
+  width:1100px;
+  background-image:url("images/backgroundImage.png");
+  display:flex;
+  justify-content:flex-start;
+  height:500px;
 }
 
-.l-header {
-  width:1100px;
-    background-image:url("images/backgroundImage.png")
-/*  background-color:-webkit-background-size: 150px 150px;
--moz-background-size: 150px 150px;
-background-size: 150px 150px;
-background-color: #1eb9c1;
-background-image: -webkit-gradient(linear, 0 0, 100% 100%,
-            color-stop(.25, #06b1ba), color-stop(.25, transparent),
-            color-stop(.5, transparent), color-stop(.5, #06b1ba),
-            color-stop(.75, #06b1ba), color-stop(.75, transparent),
-            to(transparent));
-background-image: -webkit-linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
-          transparent 50%, #06b1ba 50%, #06b1ba 75%,
-          transparent 75%, transparent);
-background-image: -moz-linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
-          transparent 50%, #06b1ba 50%, #06b1ba 75%,
-          transparent 75%, transparent);
-background-image: -ms-linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
-          transparent 50%, #06b1ba 50%, #06b1ba 75%,
-          transparent 75%, transparent);
-background-image: -o-linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
-          transparent 50%, #06b1ba 50%, #06b1ba 75%,
-          transparent 75%, transparent);
-background-image: linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
-          transparent 50%, #06b1ba 50%, #06b1ba 75%,
-          transparent 75%, transparent);*/
-}
 
 .headerTitle {
   margin:auto;
@@ -104,6 +77,7 @@ background-image: linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
 }
 
 .engineer-description {
+  background-color:#dcf4f3;
   height:500px;
   width:1100px;
   display:flex;
@@ -130,11 +104,6 @@ background-image: linear-gradient(-45deg, #06b1ba 25%, transparent 25%,
 .message {
   font-size:15px;
   color: #08b1ba;
-}
-
-.engineer-description {
-  background-color:#dcf4f3;
-
 }
 
 .characteristic {
@@ -523,4 +492,254 @@ td:nth-child(odd) {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
     border-bottom: none;
+}
+
+@media screen and (max-width:999px) {
+
+  .l-header {
+    background-size:cover;
+    width:100%;
+    height:auto;
+    flex-flow:column nowrap;
+    align-items:center;
+  }
+  .headerTitle {
+    padding:0;
+  }
+  .place {
+    width:100%;
+    padding:0;
+    margin-right:0;
+    text-align:center;
+  }
+  .place img {
+    width:80%;
+  }
+  .pc-hund {
+    width:70%;
+    padding-bottom:2.5px;
+  }
+  .headerTitle-wrap{
+    width:100%;
+  }
+  .headerTitle-wrap p{
+    padding:0;
+    width:100%;
+    font-size:40px;
+  }
+  .headerTitle img {
+    width:90%;
+  }
+
+  .header-button{
+    margin-left:0;
+    bottom:500px;
+    font-size:30px;
+    height:150px;
+    width:70%;
+    line-height:150px;
+    border-radius:10px;
+  }
+  .engineer-description {
+    width:100%;
+    height:1500px;
+    flex-flow:column-reverse nowrap;
+  }
+  .descriptionText {
+    width:90%;
+    padding:0;
+    margin:auto;
+    text-align:center;
+  }
+  .message {
+    font-size:50px;
+  }
+  .descriptionText h2 {
+    margin:auto;
+    font-size:70px;
+  }
+  .descriptionText p {
+    font-size:25px;
+  }
+  .button:first-child {
+    bottom:500px;
+    font-size:30px;
+    height:150px;
+    width:70%;
+    line-height:150px;
+    border-radius:10px;
+  }
+  .characteristic {
+    width:90%;
+    margin:auto;
+    height:500px;
+  }
+  .characteristicWrap {
+    height:100px;
+  }
+  .characteristicWrap img {
+    width:80px;
+    height:80px;
+  }
+  .characteristic h3 {
+    font-size:50px;
+  }
+  .characteristic ul{
+    font-size:40px;
+    padding-left:70px;
+  }
+  .characteristic li {
+    padding:20px;
+  }
+  .characteristic li img {
+    width:70px;
+  }
+  .state {
+    display:block;
+    width:100%;
+    height:1500px;
+  }
+  .stateImage {
+    margin:0;
+  }
+  .stateImage img {
+    left:80%;
+  }
+  .stateText {
+    text-align:center;
+    width:90%;
+    margin:auto;
+  }
+  .stateText h2 {
+    font-size:70px;
+    margin-top:0;
+  }
+  .stateText p {
+    font-size:25px;
+  }
+  .button:nth-child(3){
+    bottom:500px;
+    font-size:30px;
+    height:150px;
+    width:70%;
+    line-height:150px;
+    border-radius:10px;
+  }
+
+  .engineer-work {
+    flex-flow:column-reverse nowrap;
+    width:100%;
+    height:1500px;
+    text-align:center;
+    align-items:center;
+    position:static;
+  }
+  .engineer-workText {
+    width:90%;
+    margin:0;
+    padding:0;
+    padding-bottom:100px;
+}
+.engineer-workText h2{
+  font-size:80px;
+  margin-top:0;
+}
+.engineer-workText p{
+  font-size:25px;
+}
+
+  .engineer-workImage img {
+    position:static;
+    align-self:top;
+    width:500px;
+  }
+  .l-footer h2{
+    font-size:45px;
+  }
+  .fotterTitle-first {
+    font-size:35px;
+  }
+  .l-footer img {
+    width:90%;
+  }
+  .footer-contentsWrap{
+    flex-flow:column nowrap;
+  }
+  .event {
+    align-self:center;
+    width:80%;
+    height:800px;
+    padding:0;
+  }
+  .eventTitle {
+    height:100px;
+  }
+  .eventTitle img{
+    width:50px;
+    height:50px;
+  }
+  .eventTitle h3 {
+    font-size:40px;
+  }
+  .eventOverView {
+    width:100%;
+    height:800px;
+  }
+  .eventOverViewWrap {
+    height:800px;
+  }
+  .th,td{
+    font-size:35px;
+  }
+  .prof {
+    align-self:center;
+    width:80%;
+    height:800px;
+    padding:0;
+    margin-top:200px;
+  }
+  .profImageTitle{
+    height:100px;
+  }
+  .profImageTitle img {
+    width:50px;
+    height:50px;
+  }
+  .profImageTitle h3 {
+    font-size:40px;
+  }
+  .profContent {
+    height:800px;
+  }
+  .profImage {
+    height:280px;
+  }
+  .profImage img {
+    height:280px;
+    width:300px;
+  }
+  .profContent h4 {
+    height:150px;
+    line-height:70px;
+  }
+  #name {
+    font-size:50px;
+  }
+  #nameContent {
+    font-size:50px;
+  }
+  .history ul {
+    font-size:30px;
+  }
+  .footer-button {
+    bottom:500px;
+    font-size:30px;
+    height:150px;
+    width:70%;
+    line-height:150px;
+    border-radius:10px;
+  }
+  .l-footer .btn {
+    margin-top:200px;
+  }
 }
